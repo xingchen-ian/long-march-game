@@ -1,0 +1,8 @@
+{
+  "title": "红军长征 · 游戏资料",
+  "updated": "2026-10-24",
+  "pages": [
+    { "id": "books", "title": "阅读书目", "file": "books.md" },
+    { "id": "ideas", "title": "设计想法", "file": "ideas.md" }
+  ]
+}
