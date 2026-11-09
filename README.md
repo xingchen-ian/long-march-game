@@ -1,6 +1,6 @@
 # long-march-game
 
-长征主题游戏的书目与设计想法站点。与 [research-materials](https://xingchen-ian.github.io/research-materials/) 分开。
+长征主题游戏的阅读书目、设计想法、故事框架站点。与 [research-materials](https://xingchen-ian.github.io/research-materials/) 分开。
 
 ## 本地预览
 
