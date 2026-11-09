@@ -14,6 +14,7 @@ python3 -m http.server 8000
 
 - 书目：`data/books.md`
 - 想法：`data/ideas.md`
+- 故事框架：`data/story-framework.md`
 - 导航：`data/index.json`
 
 GitHub Pages：Settings → Pages → Deploy from branch → `main` / `(root)`。
