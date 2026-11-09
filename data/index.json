@@ -1,8 +1,9 @@
 {
   "title": "红军长征 · 游戏资料",
-  "updated": "2026-10-24",
+  "updated": "2026-11-09",
   "pages": [
     { "id": "books", "title": "阅读书目", "file": "books.md" },
-    { "id": "ideas", "title": "设计想法", "file": "ideas.md" }
+    { "id": "ideas", "title": "设计想法", "file": "ideas.md" },
+    { "id": "story-framework", "title": "故事框架", "file": "story-framework.md" }
   ]
 }
