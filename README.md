@@ -1,6 +1,6 @@
 # long-march-game
 
-长征主题游戏的阅读书目、设计想法、故事框架站点。与 [research-materials](https://xingchen-ian.github.io/research-materials/) 分开。
+长征主题游戏的阅读书目、设计想法、故事框架、系统设计站点。与 [research-materials](https://xingchen-ian.github.io/research-materials/) 分开。
 
 ## 本地预览
 
@@ -15,6 +15,7 @@ python3 -m http.server 8000
 - 书目：`data/books.md`
 - 想法：`data/ideas.md`
 - 故事框架：`data/story-framework.md`
+- 系统设计：`data/systems-spec.md`
 - 导航：`data/index.json`
 
 GitHub Pages：Settings → Pages → Deploy from branch → `main` / `(root)`。
