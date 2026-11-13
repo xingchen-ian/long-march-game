@@ -6,6 +6,7 @@
     { "id": "ideas", "title": "设计想法", "file": "ideas.md" },
     { "id": "story-framework", "title": "故事框架", "file": "story-framework.md" },
     { "id": "systems-spec", "title": "系统设计", "file": "systems-spec.md" },
-    { "id": "weapons", "title": "武器调研", "file": "weapons.md" }
+    { "id": "weapons", "title": "武器调研", "file": "weapons.md" },
+    { "id": "enemies", "title": "敌军参考", "file": "enemies.md" }
   ]
 }
