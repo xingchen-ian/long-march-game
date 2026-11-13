@@ -16,6 +16,7 @@ python3 -m http.server 8000
 - 想法：`data/ideas.md`
 - 故事框架：`data/story-framework.md`
 - 系统设计：`data/systems-spec.md`
+- 武器调研草稿（不定稿）：`data/weapons.md`
 - 导航：`data/index.json`
 
 GitHub Pages：Settings → Pages → Deploy from branch → `main` / `(root)`。
