@@ -160,6 +160,8 @@
 | `escort` | 指定单位/伤员到达 `zoneId` | `escortIds[]`、`zoneId` | 护送目标阵亡 |
 | `night_pass` | 主队到达出口且 `detect` 未爆表 | `exitZone`、`detectMax` | 惊动过阈被围 |
 
+规划里补了「调开脱身」`breakaway` 和「行军消耗」`march`，这两类还没有接进代码。`night_pass` 先当作突击撕口的夜间参数。按节点的详细标注见 [目标类型](https://xingchen-ian.github.io/long-march-game/#/objective-types)。
+
 ### 数据形状（草案）
 
 ```json

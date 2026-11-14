@@ -159,3 +159,5 @@
 1. 从本池抽事件卡模板（need / text / effect）  
 2. 每节点先做 1 张主故事卡 + 1 张小任务卡试挂士兵字段  
 3. 页码核对另开「待核」清单
+
+可以池里的战场目标已按类型标注，见资料站 [目标类型](https://xingchen-ian.github.io/long-march-game/#/objective-types)。这一页仍是规划草稿，不定稿，不是每节点唯一解。

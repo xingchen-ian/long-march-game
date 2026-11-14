@@ -1,10 +1,11 @@
 {
   "title": "红军长征 · 游戏资料",
-  "updated": "2026-11-13",
+  "updated": "2026-11-14",
   "pages": [
     { "id": "books", "title": "阅读书目", "file": "books.md" },
     { "id": "ideas", "title": "设计想法", "file": "ideas.md" },
     { "id": "story-framework", "title": "故事框架", "file": "story-framework.md" },
+    { "id": "objective-types", "title": "目标类型", "file": "objective-types.md" },
     { "id": "systems-spec", "title": "系统设计", "file": "systems-spec.md" },
     { "id": "weapons", "title": "武器调研", "file": "weapons.md" },
     { "id": "enemies", "title": "敌军参考", "file": "enemies.md" }
