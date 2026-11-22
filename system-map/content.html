@@ -1,0 +1,325 @@
+<div class="system-map-page">
+  <header class="sm-hero">
+    <h1>Red Ribbon · 系统结构图</h1>
+    <p>
+      看新功能该挂哪一层、会碰到哪些模块、不该改什么。详细规则仍看
+      <a href="#/systems-spec">系统设计</a>——本页只补位置和关系。
+    </p>
+  </header>
+
+  <div class="sm-toolbar" aria-label="图例">
+    <div class="sm-legend">
+      <span class="sm-legend-item"><span class="sm-swatch done" aria-hidden="true"></span>已做 · 实线</span>
+      <span class="sm-legend-item"><span class="sm-swatch partial" aria-hidden="true"></span>部分 · 虚线</span>
+      <span class="sm-legend-item"><span class="sm-swatch todo" aria-hidden="true"></span>未做 · 虚线</span>
+    </div>
+    <span class="sm-hint">点模块看短说明。颜色只作辅助，以线型 + 文字为准。</span>
+  </div>
+
+  <div class="sm-layout">
+    <section class="sm-map-panel" aria-label="三层结构图">
+      <svg
+        class="sm-svg"
+        viewBox="0 0 980 920"
+        role="img"
+        aria-labelledby="map-title map-desc"
+      >
+        <title id="map-title">Red Ribbon 三层系统结构</title>
+        <desc id="map-desc">
+          自上而下：通用核心、待接入规则、长征内容。箭头表示数据与调用关系。
+        </desc>
+
+        <defs>
+          <marker
+            id="sm-arrow"
+            viewBox="0 0 10 10"
+            refX="9"
+            refY="5"
+            markerWidth="7"
+            markerHeight="7"
+            orient="auto-start-reverse"
+          >
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#8a8376" />
+          </marker>
+        </defs>
+
+        <!-- Layer 1: Core -->
+        <rect class="sm-layer-box core" x="20" y="16" width="940" height="430" rx="6" />
+        <text class="sm-layer-title" x="40" y="44">1. 通用核心（战场工具）</text>
+        <text class="sm-layer-sub" x="40" y="64">
+          关卡格式 · 编辑器 · 单位/射击/视野 · 工事与地形 · 目标与试玩壳 — 可换历史背景
+        </text>
+
+        <g class="sm-mod done" data-id="level-format" transform="translate(360,86)">
+          <rect width="240" height="58" rx="4" />
+          <text x="12" y="22">关卡格式</text>
+          <text class="sm-file-label" x="12" y="38">red-ribbon-battlefield-v0</text>
+          <text class="sm-status-label" x="188" y="22">已做</text>
+        </g>
+
+        <g class="sm-mod done" data-id="battlefield-editor" transform="translate(56,178)">
+          <rect width="200" height="58" rx="4" />
+          <text x="12" y="22">战场编辑器</text>
+          <text class="sm-file-label" x="12" y="38">第 1–3 层本地可用</text>
+          <text class="sm-status-label" x="148" y="22">已做</text>
+        </g>
+
+        <g class="sm-mod done" data-id="terrain" transform="translate(280,178)">
+          <rect width="190" height="58" rx="4" />
+          <text x="12" y="22">地形（缓丘/战壕）</text>
+          <text class="sm-file-label" x="12" y="38">level-core stamps</text>
+          <text class="sm-status-label" x="138" y="22">已做</text>
+        </g>
+
+        <g class="sm-mod done" data-id="prop-collision" transform="translate(494,178)">
+          <rect width="190" height="58" rx="4" />
+          <text x="12" y="22">工事与碰撞</text>
+          <text class="sm-file-label" x="12" y="38">prop-collision.js</text>
+          <text class="sm-status-label" x="138" y="22">已做</text>
+        </g>
+
+        <g class="sm-mod partial" data-id="goal-core" transform="translate(708,178)">
+          <rect width="210" height="58" rx="4" />
+          <text x="12" y="22">目标类型与结算</text>
+          <text class="sm-file-label" x="12" y="38">goal-core.js · assault</text>
+          <text class="sm-status-label" x="156" y="22">部分</text>
+        </g>
+
+        <g class="sm-mod partial" data-id="unit-core" transform="translate(56,278)">
+          <rect width="170" height="58" rx="4" />
+          <text x="12" y="22">单位状态</text>
+          <text class="sm-file-label" x="12" y="38">unit-core.js</text>
+          <text class="sm-status-label" x="118" y="22">部分</text>
+        </g>
+
+        <g class="sm-mod done" data-id="combat-core" transform="translate(250,278)">
+          <rect width="170" height="58" rx="4" />
+          <text x="12" y="22">射击与伤害</text>
+          <text class="sm-file-label" x="12" y="38">combat-core.js</text>
+          <text class="sm-status-label" x="118" y="22">已做</text>
+        </g>
+
+        <g class="sm-mod done" data-id="los" transform="translate(444,278)">
+          <rect width="170" height="58" rx="4" />
+          <text x="12" y="22">视野 / 视线</text>
+          <text class="sm-file-label" x="12" y="38">开枪已接挡视</text>
+          <text class="sm-status-label" x="118" y="22">已做</text>
+        </g>
+
+        <g class="sm-mod partial" data-id="play-shell" transform="translate(660,278)">
+          <rect width="258" height="58" rx="4" />
+          <text x="12" y="22">类型选择与试玩壳</text>
+          <text class="sm-file-label" x="12" y="38">仅突击撕口可玩</text>
+          <text class="sm-status-label" x="204" y="22">部分</text>
+        </g>
+
+        <text class="sm-layer-sub" x="56" y="372">
+          level-core.js：校验 / 序列化 / 地形取样 / 工事种类默认 — 编辑器写，试玩读
+        </text>
+        <text class="sm-layer-sub" x="56" y="392">
+          交火核心：unit-core + combat-core + 视线 + prop-collision · 默认关 levels/assault-v0.json
+        </text>
+        <text class="sm-open-note" x="56" y="420">
+          以后若开源：通用核心 + 待接入规则 ∥ 长征内容（两层边界画清即可，现在不拆仓库）
+        </text>
+
+        <path class="sm-edge strong" d="M 256 207 C 300 150, 340 130, 360 115" />
+        <text class="sm-edge-label" x="268" y="148">写 JSON</text>
+        <path class="sm-edge strong" d="M 600 115 C 680 130, 720 180, 740 278" />
+        <text class="sm-edge-label" x="700" y="168">试玩读</text>
+        <path class="sm-edge" d="M 813 236 L 790 278" />
+        <text class="sm-edge-label" x="820" y="258">调用</text>
+        <path class="sm-edge" d="M 589 236 L 529 278" />
+        <path class="sm-edge" d="M 375 236 L 335 278" />
+        <path class="sm-edge" d="M 226 307 L 250 307" />
+        <path class="sm-edge" d="M 444 307 L 420 307" />
+
+        <!-- Layer 2: Pending -->
+        <rect class="sm-layer-box pending" x="20" y="468" width="940" height="188" rx="6" />
+        <text class="sm-layer-title" x="40" y="496">2. 待接入（会互相牵扯，尚未成可玩规则）</text>
+        <text class="sm-layer-sub" x="40" y="516">
+          依赖核心字段与结算，但现在还没接通 — 不要画成已接通，也不要画成长征内容
+        </text>
+
+        <g class="sm-mod todo" data-id="morale" transform="translate(56,540)">
+          <rect width="168" height="58" rx="4" />
+          <text x="12" y="22">士气与侧翼</text>
+          <text class="sm-file-label" x="12" y="38">字段在，规则未接</text>
+          <text class="sm-status-label" x="118" y="22">未做</text>
+        </g>
+
+        <g class="sm-mod todo" data-id="tactics" transform="translate(244,540)">
+          <rect width="168" height="58" rx="4" />
+          <text x="12" y="22">战术能力与代价</text>
+          <text class="sm-file-label" x="12" y="38">tactics-buttons-v0</text>
+          <text class="sm-status-label" x="118" y="22">未做</text>
+        </g>
+
+        <g class="sm-mod todo" data-id="resource-alloc" transform="translate(432,540)">
+          <rect width="168" height="58" rx="4" />
+          <text x="12" y="22">行动前资源分配</text>
+          <text class="sm-file-label" x="12" y="38">resource-alloc-v0</text>
+          <text class="sm-status-label" x="118" y="22">未做</text>
+        </g>
+
+        <g class="sm-mod todo" data-id="other-goals" transform="translate(620,540)">
+          <rect width="168" height="58" rx="4" />
+          <text x="12" y="22">其余目标完整关</text>
+          <text class="sm-file-label" x="12" y="38">选单占位</text>
+          <text class="sm-status-label" x="118" y="22">未做</text>
+        </g>
+
+        <g class="sm-mod todo" data-id="river-assets" transform="translate(808,540)">
+          <rect width="130" height="58" rx="4" />
+          <text x="12" y="22">河/船/桥</text>
+          <text class="sm-file-label" x="12" y="38">缺资产</text>
+          <text class="sm-status-label" x="80" y="22">未做</text>
+        </g>
+
+        <text class="sm-layer-sub" x="56" y="632">
+          虚线箭头 = 规划依赖，尚未接通
+        </text>
+
+        <path class="sm-edge dashed" d="M 140 540 L 140 336" />
+        <text class="sm-edge-label" x="148" y="460">接 unit 字段</text>
+        <path class="sm-edge dashed" d="M 328 540 L 335 336" />
+        <text class="sm-edge-label" x="336" y="460">接交火</text>
+        <path class="sm-edge dashed" d="M 516 540 L 740 336" />
+        <text class="sm-edge-label" x="620" y="448">接试玩壳</text>
+        <path class="sm-edge dashed" d="M 704 540 L 790 236" />
+        <text class="sm-edge-label" x="760" y="420">扩 goal-core</text>
+
+        <!-- Layer 3: Content -->
+        <rect class="sm-layer-box content" x="20" y="678" width="940" height="220" rx="6" />
+        <text class="sm-layer-title" x="40" y="706">3. 长征内容</text>
+        <text class="sm-layer-sub" x="40" y="726">
+          史料 / 关卡 / 角色 / 事件卡 / 文案 — 只供给数据，不写进 *-core.js；资料站是给人看的规划
+        </text>
+
+        <g class="sm-mod partial" data-id="research" transform="translate(56,748)">
+          <rect width="140" height="58" rx="4" />
+          <text x="12" y="22">史料与调研</text>
+          <text class="sm-file-label" x="12" y="38">Research/</text>
+          <text class="sm-status-label" x="88" y="22">部分</text>
+        </g>
+
+        <g class="sm-mod partial" data-id="stories" transform="translate(214,748)">
+          <rect width="140" height="58" rx="4" />
+          <text x="12" y="22">节点与故事</text>
+          <text class="sm-file-label" x="12" y="38">Stories/</text>
+          <text class="sm-status-label" x="88" y="22">部分</text>
+        </g>
+
+        <g class="sm-mod partial" data-id="level-content" transform="translate(372,748)">
+          <rect width="140" height="58" rx="4" />
+          <text x="12" y="22">关卡内容</text>
+          <text class="sm-file-label" x="12" y="38">长征关未铺开</text>
+          <text class="sm-status-label" x="88" y="22">部分</text>
+        </g>
+
+        <g class="sm-mod todo" data-id="characters" transform="translate(530,748)">
+          <rect width="140" height="58" rx="4" />
+          <text x="12" y="22">角色/姓名/性格</text>
+          <text class="sm-file-label" x="12" y="38">未挂原型</text>
+          <text class="sm-status-label" x="88" y="22">未做</text>
+        </g>
+
+        <g class="sm-mod todo" data-id="event-cards" transform="translate(688,748)">
+          <rect width="120" height="58" rx="4" />
+          <text x="12" y="22">事件卡</text>
+          <text class="sm-file-label" x="12" y="38">草案</text>
+          <text class="sm-status-label" x="68" y="22">未做</text>
+        </g>
+
+        <g class="sm-mod partial" data-id="docs-site" transform="translate(826,748)">
+          <rect width="112" height="58" rx="4" />
+          <text x="12" y="22">资料站</text>
+          <text class="sm-file-label" x="12" y="38">规划页</text>
+          <text class="sm-status-label" x="60" y="22">部分</text>
+        </g>
+
+        <text class="sm-layer-sub" x="56" y="840">
+          内容 → 关卡 JSON / 角色数据 / 事件卡；不进入 core。资料站 ≠ 运行时。
+        </text>
+        <text class="sm-layer-sub" x="56" y="860">
+          现有突击默认关是通用布局，不是长征专属关。
+        </text>
+
+        <path class="sm-edge content" d="M 442 748 C 442 700, 460 200, 480 144" />
+        <text class="sm-edge-label" x="450" y="680">供给关卡 JSON</text>
+        <path class="sm-edge content" d="M 600 748 C 560 700, 200 420, 160 336" />
+        <text class="sm-edge-label" x="520" y="700">角色数据（不进 core 规则）</text>
+      </svg>
+    </section>
+
+    <aside class="sm-detail-panel" aria-live="polite">
+      <div id="sm-detail">
+        <p class="sm-detail-empty">点左侧模块，看它做什么、依赖什么、现状。</p>
+      </div>
+    </aside>
+  </div>
+
+  <section class="sm-table-section" aria-labelledby="compare-title">
+    <h2 id="compare-title">以后加东西时：改什么 / 不该改什么</h2>
+    <p>对照表按典型改动列边界。模块名可微调，边界不要糊。</p>
+    <div class="sm-table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>要加的东西</th>
+            <th>主要会改 / 会碰到</th>
+            <th>不该改</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>一种新的目标类型</td>
+            <td>
+              <code>goal-core.js</code>、类型选择、关卡 JSON 里的目标字段；必要时补测试
+            </td>
+            <td class="sm-should-not">
+              不要为单个长征故事单独写结算脚本；不要改
+              <code>Stories/</code> 里已勾的「可以」
+            </td>
+          </tr>
+          <tr>
+            <td>一种新的工事</td>
+            <td>
+              关卡种类契约、<code>prop-collision.js</code>、编辑器摆放；试玩走同一套碰撞
+            </td>
+            <td class="sm-should-not">
+              不要改目标结算；不要把某种长征专属工事逻辑写死在核心里却不进数据
+            </td>
+          </tr>
+          <tr>
+            <td>士气规则</td>
+            <td>
+              <code>unit-core.js</code> 已有字段上的规则、交火 / 侧翼相关；对照士兵系统
+              R1–R2 和总纲 §6.8
+            </td>
+            <td class="sm-should-not">
+              不要先改编辑器地形；不要把长征文案写进核心
+            </td>
+          </tr>
+          <tr>
+            <td>一场长征关</td>
+            <td>
+              关卡 JSON + 内容层（文案、角色、史料出处）；复用已有目标类型和编辑器
+            </td>
+            <td class="sm-should-not">
+              不要把史料、角色、关卡文案写进 <code>*-core.js</code>；不要覆盖
+              story-options 勾选；不要改默认突击关的出生点和目标，除非另有 brief
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer class="sm-footer">
+    <p>
+      快照日期：2026-11-21（上海时区）。按 brief 快照标注，未对照本机
+      <code>web-proto</code>。本页合入资料站，补充「系统设计」的位置与关系。
+    </p>
+  </footer>
+</div>

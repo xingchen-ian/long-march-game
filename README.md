@@ -17,6 +17,7 @@ python3 -m http.server 8000
 - 故事框架：`data/story-framework.md`
 - 目标类型草稿（不定稿）：`data/objective-types.md`
 - 系统设计：`data/systems-spec.md`
+- 系统结构图：`system-map/`（hash `#/system-map`）
 - 武器调研草稿（不定稿）：`data/weapons.md`
 - 敌军参考草稿（不定稿）：`data/enemies.md`
 - 导航：`data/index.json`
