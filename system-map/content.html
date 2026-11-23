@@ -88,14 +88,14 @@
         <g class="sm-mod partial" data-id="unit-core" transform="translate(56,278)">
           <rect width="170" height="58" rx="4" />
           <text x="12" y="22">单位状态</text>
-          <text class="sm-file-label" x="12" y="38">unit-core.js</text>
+          <text class="sm-file-label" x="12" y="38">含 morale / weapon</text>
           <text class="sm-status-label" x="118" y="22">部分</text>
         </g>
 
         <g class="sm-mod done" data-id="combat-core" transform="translate(250,278)">
           <rect width="170" height="58" rx="4" />
           <text x="12" y="22">射击与伤害</text>
-          <text class="sm-file-label" x="12" y="38">combat-core.js</text>
+          <text class="sm-file-label" x="12" y="38">命中→扣血 · LMG</text>
           <text class="sm-status-label" x="118" y="22">已做</text>
         </g>
 
@@ -109,7 +109,7 @@
         <g class="sm-mod partial" data-id="play-shell" transform="translate(660,278)">
           <rect width="258" height="58" rx="4" />
           <text x="12" y="22">类型选择与试玩壳</text>
-          <text class="sm-file-label" x="12" y="38">仅突击撕口可玩</text>
+          <text class="sm-file-label" x="12" y="38">突击含命中/毅力/LMG</text>
           <text class="sm-status-label" x="204" y="22">部分</text>
         </g>
 
@@ -117,7 +117,7 @@
           level-core.js：校验 / 序列化 / 地形取样 / 工事种类默认 — 编辑器写，试玩读
         </text>
         <text class="sm-layer-sub" x="56" y="392">
-          交火核心：unit-core + combat-core + 视线 + prop-collision · 默认关 levels/assault-v0.json
+          交火核心：命中先于扣血 · 掩体只降命中 · 毅力规则在 combat · 默认关 e01/e06 轻机枪
         </text>
         <text class="sm-open-note" x="56" y="420">
           以后若开源：通用核心 + 待接入规则 ∥ 长征内容（两层边界画清即可，现在不拆仓库）
@@ -136,16 +136,16 @@
 
         <!-- Layer 2: Pending -->
         <rect class="sm-layer-box pending" x="20" y="468" width="940" height="188" rx="6" />
-        <text class="sm-layer-title" x="40" y="496">2. 待接入（会互相牵扯，尚未成可玩规则）</text>
+        <text class="sm-layer-title" x="40" y="496">2. 待接入（会互相牵扯；部分已进突击关）</text>
         <text class="sm-layer-sub" x="40" y="516">
-          依赖核心字段与结算，但现在还没接通 — 不要画成已接通，也不要画成长征内容
+          毅力/侧翼已部分接入；战术键与资源分配等仍未接通 — 不要画成长征内容
         </text>
 
-        <g class="sm-mod todo" data-id="morale" transform="translate(56,540)">
+        <g class="sm-mod partial" data-id="morale" transform="translate(56,540)">
           <rect width="168" height="58" rx="4" />
           <text x="12" y="22">士气与侧翼</text>
-          <text class="sm-file-label" x="12" y="38">字段在，规则未接</text>
-          <text class="sm-status-label" x="118" y="22">未做</text>
+          <text class="sm-file-label" x="12" y="38">R1/R2 已接突击</text>
+          <text class="sm-status-label" x="118" y="22">部分</text>
         </g>
 
         <g class="sm-mod todo" data-id="tactics" transform="translate(244,540)">
@@ -180,10 +180,11 @@
           虚线箭头 = 规划依赖，尚未接通
         </text>
 
+        <!-- Dashed edges from pending up to core（毅力已部分接通，线型仍虚线=未完） -->
         <path class="sm-edge dashed" d="M 140 540 L 140 336" />
-        <text class="sm-edge-label" x="148" y="460">接 unit 字段</text>
+        <text class="sm-edge-label" x="148" y="460">已接毅力（部分）</text>
         <path class="sm-edge dashed" d="M 328 540 L 335 336" />
-        <text class="sm-edge-label" x="336" y="460">接交火</text>
+        <text class="sm-edge-label" x="336" y="460">战术键未接</text>
         <path class="sm-edge dashed" d="M 516 540 L 740 336" />
         <text class="sm-edge-label" x="620" y="448">接试玩壳</text>
         <path class="sm-edge dashed" d="M 704 540 L 790 236" />
@@ -213,7 +214,7 @@
         <g class="sm-mod partial" data-id="level-content" transform="translate(372,748)">
           <rect width="140" height="58" rx="4" />
           <text x="12" y="22">关卡内容</text>
-          <text class="sm-file-label" x="12" y="38">长征关未铺开</text>
+          <text class="sm-file-label" x="12" y="38">突击含 2×LMG</text>
           <text class="sm-status-label" x="88" y="22">部分</text>
         </g>
 
@@ -292,13 +293,14 @@
             </td>
           </tr>
           <tr>
-            <td>士气规则</td>
+            <td>士气 / 毅力规则</td>
             <td>
-              <code>unit-core.js</code> 已有字段上的规则、交火 / 侧翼相关；对照士兵系统
-              R1–R2 和总纲 §6.8
+              已部分落地：<code>combat-core.js</code> + <code>unit-core</code> 的
+              <code>morale</code>；侧翼 / R1 减员 / R2 犹豫与动摇。补羁绊豁免或 R3
+              仍走这两处；对照总纲 §6.8
             </td>
             <td class="sm-should-not">
-              不要先改编辑器地形；不要把长征文案写进核心
+              不要另开精神条；不要先改编辑器地形；不要把长征文案写进核心
             </td>
           </tr>
           <tr>
@@ -318,8 +320,8 @@
 
   <footer class="sm-footer">
     <p>
-      快照日期：2026-11-21（上海时区）。按 brief 快照标注，未对照本机
-      <code>web-proto</code>。本页合入资料站，补充「系统设计」的位置与关系。
+      快照日期：2026-11-23（上海时区）。已对照本机
+      <code>web-proto</code> 突击关第一刀（命中 / 毅力 / 敌军轻机枪）。本页合入资料站，补充「系统设计」的位置与关系。
     </p>
   </footer>
 </div>
