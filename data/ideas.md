@@ -1,6 +1,7 @@
 # 设计想法
 
-把玩法假设、想避开的坑、灵感随手记在这里。随时改。
+把玩法假设、想避开的坑、灵感随手记在这里。随时改。  
+配图补充：2026-11-25。本页只放一张公有领域路线底图作地理灵感；细化节点见 [故事框架](#/story-framework)。
 
 ## 现在想做的
 
@@ -16,9 +17,16 @@
 - 《红军长征记》：碎细节 → 事件卡
 - 孙书云：代价、逃兵、宣传落差 → 机制张力
 
+## 地理灵感（路线底图）
+
+<figure>
+<img src="images/story/long-march-map-usma.jpg" alt="美国西点军校绘制的1934–1935长征路线图">
+<figcaption>1934–1935 年长征路线图（美国西点军校史学部地图集）。公有领域底本，适合当「关卡化节点」的地理草稿；英文地名、边界画法是美方教材习惯，不是中文定稿地图。作者 / 来源：USMA（U.S. Military Academy）History Department。许可：公有领域（美国联邦政府作品）。文件页：<a href="https://commons.wikimedia.org/wiki/File:Chinese_civil_war_map_03.jpg">Wikimedia Commons: Chinese civil war map 03.jpg</a>。中文标注版见故事框架页。</figcaption>
+</figure>
+
 ## 待补资料
 
-- 长征路线关键节点时间线（可关卡化）
+- 长征路线关键节点时间线（可关卡化）— 上图只作起点
 - 严肃游戏 / 历史游戏相关文献
-- 地图与公开图像资源清单
+- 地图与公开图像资源清单（武器 / 敌军 / 故事页已开始积累 Commons 自由图）
 - 已有长征题材游戏对照（若有）

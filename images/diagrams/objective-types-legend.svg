@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 280" role="img" aria-labelledby="ot-title ot-desc">
+  <title id="ot-title">战场目标类型图例</title>
+  <desc id="ot-desc">五种程序目标类型：突击撕口、护渡过点、断后坚持、调开脱身、行军消耗，及各自完成方式摘要。</desc>
+  <style>
+    .box { fill: #f7f3ea; stroke: #5c4033; stroke-width: 1.5; }
+    .title { font: 700 15px "Noto Sans SC", "Source Han Sans SC", sans-serif; fill: #2a1c12; }
+    .body { font: 400 12px "Noto Sans SC", "Source Han Sans SC", sans-serif; fill: #4a3a2c; }
+    .code { font: 600 11px ui-monospace, monospace; fill: #7a3b1e; }
+    .caption { font: 400 11px "Noto Sans SC", "Source Han Sans SC", sans-serif; fill: #6b5a4a; }
+    .bg { fill: #efe8da; }
+  </style>
+  <rect class="bg" x="0" y="0" width="920" height="280" rx="8"/>
+  <text class="title" x="24" y="36">本场目标类型 · 图例（本站绘制）</text>
+  <text class="caption" x="24" y="56">完成条件靠类型 + 参数；不是每个故事单独脚本。</text>
+
+  <g transform="translate(24,76)">
+    <rect class="box" width="168" height="150" rx="6"/>
+    <text class="title" x="12" y="28">突击撕口</text>
+    <text class="code" x="12" y="48">assault</text>
+    <text class="body" x="12" y="72">撕开突破线</text>
+    <text class="body" x="12" y="92">或守住指定点</text>
+    <text class="body" x="12" y="112">夜突可作参数</text>
+  </g>
+  <g transform="translate(204,76)">
+    <rect class="box" width="168" height="150" rx="6"/>
+    <text class="title" x="12" y="28">护渡 / 过点</text>
+    <text class="code" x="12" y="48">escort</text>
+    <text class="body" x="12" y="72">人/物资到达</text>
+    <text class="body" x="12" y="92">指定区域即胜</text>
+    <text class="body" x="12" y="112">半渡、护粮</text>
+  </g>
+  <g transform="translate(384,76)">
+    <rect class="box" width="168" height="150" rx="6"/>
+    <text class="title" x="12" y="28">断后坚持</text>
+    <text class="code" x="12" y="48">rear_guard</text>
+    <text class="body" x="12" y="72">坚持指定时间</text>
+    <text class="body" x="12" y="92">或友军脱离成立</text>
+    <text class="body" x="12" y="112">阻击、最后撤</text>
+  </g>
+  <g transform="translate(564,76)">
+    <rect class="box" width="168" height="150" rx="6"/>
+    <text class="title" x="12" y="28">调开脱身</text>
+    <text class="code" x="12" y="48">breakaway</text>
+    <text class="body" x="12" y="72">甩掉或诱开敌军</text>
+    <text class="body" x="12" y="92">不以歼灭为主</text>
+    <text class="body" x="12" y="112">四渡主类型</text>
+  </g>
+  <g transform="translate(744,76)">
+    <rect class="box" width="152" height="150" rx="6"/>
+    <text class="title" x="12" y="28">行军消耗</text>
+    <text class="code" x="12" y="48">march</text>
+    <text class="body" x="12" y="72">带到终点</text>
+    <text class="body" x="12" y="92">管粮/伤/掉队</text>
+    <text class="body" x="12" y="112">雪山、草地</text>
+  </g>
+</svg>
