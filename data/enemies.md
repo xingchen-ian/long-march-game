@@ -173,7 +173,7 @@
 | `images/enemies/roc-army-uniform-1936.jpg` | 1936 年中央军士兵军服复原。今人拍摄，非历史原照 | W10032758W，2021 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.zh) | [Roc army 1936 (II).jpg](https://commons.wikimedia.org/wiki/File:Roc_army_1936_(II).jpg) |
 | `images/enemies/nra-rifleman-shanghai-1937.jpg` | 1937 年上海单兵，钢盔与步枪。对照用，不当 1934 默认 | 美国海军历史与遗产指挥部 NH 77779 | 公有领域（PD-USGov-Military-Navy） | [NH 77779.jpg](https://commons.wikimedia.org/wiki/File:NH_77779.jpg) |
 
-没有配图的：湘江、遵义、四渡、大渡河的战场士兵原照；黔军、川军士兵；1934–35 年追剿用的飞机。不是没有历史记载，是没有找到许可可核对、又对得上时间和对象的照片。
+没有配图的：湘江、遵义、四渡、大渡河的战场士兵原照；黔军、川军士兵；1934–35 年追剿用的飞机。不是没有历史记载，是没有找到许可可核对、又对得上时间和对象的照片。共享资源上有 1930 年代中国空军霍克 III 等机型照，但服役与「长征追剿」是否同一批用法未核清，本稿仍不放，以免错年代。地点环境与路线示意图改放在 [故事框架](#/story-framework)。
 
 ## 本稿未做的事
 

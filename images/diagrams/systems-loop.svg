@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 320" role="img" aria-labelledby="sl-title sl-desc">
+  <title id="sl-title">系统设计行动循环图例</title>
+  <desc id="sl-desc">行动前分配资源与目标，行动中战术与移动，触发事件卡改士兵状态，再进入下一节点。</desc>
+  <style>
+    .panel { fill: #f4efe4; stroke: #4d3a2a; stroke-width: 1.6; }
+    .arrow { fill: none; stroke: #7a3b1e; stroke-width: 2.2; marker-end: url(#arr); }
+    .t { font: 700 14px "Noto Sans SC", "Source Han Sans SC", sans-serif; fill: #2a1c12; }
+    .b { font: 400 12px "Noto Sans SC", "Source Han Sans SC", sans-serif; fill: #4a3a2c; }
+    .cap { font: 400 11px "Noto Sans SC", "Source Han Sans SC", sans-serif; fill: #6b5a4a; }
+    .bg { fill: #ebe4d6; }
+  </style>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#7a3b1e"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="880" height="320" rx="8"/>
+  <text class="t" x="24" y="34">设计核 · 行动循环（本站绘制）</text>
+  <text class="cap" x="24" y="54">士兵状态 × 节点时空 × 行动前分配 × 战术按钮 → 事件卡</text>
+
+  <g transform="translate(40,90)">
+    <rect class="panel" width="170" height="120" rx="8"/>
+    <text class="t" x="16" y="32">1. 选目标</text>
+    <text class="b" x="16" y="56">assault / escort</text>
+    <text class="b" x="16" y="76">rear_guard / …</text>
+    <text class="b" x="16" y="96">看资源池</text>
+  </g>
+  <path class="arrow" d="M220 150 H250"/>
+
+  <g transform="translate(260,90)">
+    <rect class="panel" width="170" height="120" rx="8"/>
+    <text class="t" x="16" y="32">2. 分配资源</text>
+    <text class="b" x="16" y="56">ammo / food</text>
+    <text class="b" x="16" y="76">med / tool</text>
+    <text class="b" x="16" y="96">写入 loadout</text>
+  </g>
+  <path class="arrow" d="M440 150 H470"/>
+
+  <g transform="translate(480,90)">
+    <rect class="panel" width="170" height="120" rx="8"/>
+    <text class="t" x="16" y="32">3. 行动中</text>
+    <text class="b" x="16" y="56">移动 · 队形</text>
+    <text class="b" x="16" y="76">掩护 / 尖刀</text>
+    <text class="b" x="16" y="96">迂回 / 断后</text>
+  </g>
+  <path class="arrow" d="M660 150 H690"/>
+
+  <g transform="translate(700,90)">
+    <rect class="panel" width="140" height="120" rx="8"/>
+    <text class="t" x="14" y="32">4. 事件卡</text>
+    <text class="b" x="14" y="56">need → text</text>
+    <text class="b" x="14" y="76">→ effect</text>
+    <text class="b" x="14" y="96">改 hp/morale</text>
+  </g>
+
+  <path class="arrow" d="M770 220 V250 H120 V210"/>
+  <text class="cap" x="300" y="272">结束结算 → 写入长期 tags → 下一节点（牺牲则个人故事消失）</text>
+</svg>

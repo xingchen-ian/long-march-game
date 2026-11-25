@@ -166,8 +166,12 @@
 
 对造型：有枪的人和没枪的人不应做成同一套装备。刀、矛是「缺枪」最直接的可视化。
 
+<figure>
+<img src="images/weapons/dadao-3d.jpg" alt="中国双手大刀外形的三维模型示意图">
+<figcaption>中国双手大刀（dadao）外形三维示意。只对照宽刃、长柄的大致轮廓，不是长征某支部队的实物登记照，也不能当成某一次战斗的缴获清单。作者：WeEnterWinter。许可：<a href="https://creativecommons.org/licenses/by/2.5/deed.zh">CC BY 2.5</a>（同一文件亦以 GFDL 双授权）。文件页：<a href="https://commons.wikimedia.org/wiki/File:Dadao_3D.jpg">Wikimedia Commons: Dadao 3D.jpg</a>。士兵持刀的同期外形参考另见敌军页 1933 年热河大刀队照（他役参考）。</figcaption>
+</figure>
 
-本页没有配麻尾手榴弹、大刀或梭镖的图。能找到的要么许可对不上（图床转载、来源说不清），要么只是远处练刀的模糊影片截帧，看不清兵器本身。宁可不放。
+本页没有配麻尾手榴弹或梭镖的图。能找到的要么许可对不上（图床转载、来源说不清），要么年代/形制对不上（例如周代矛头），要么只是远处练刀的模糊影片截帧。宁可不放。
 
 ### 2.8 冲锋枪（「花机关」）：有，但很少
 
@@ -305,6 +309,7 @@
 | `images/weapons/mauser-c96-stock.jpg` | 毛瑟 C96，木盒枪托装着。中国人民革命军事博物馆陈列 | Gary Todd（Gary Lee Todd） | CC0 | [M-1896 Mauser Pistol with Stock (9885390804).jpg](https://commons.wikimedia.org/wiki/File:M-1896_Mauser_Pistol_with_Stock_(9885390804).jpg) |
 | `images/weapons/sig-ke7-dadu.jpg` | 军博陈列的弧形弹匣轻机枪；上传者说明为强渡大渡河所用瑞士造启拉利 | Huanokinhejo | CC BY-SA 4.0 | [强渡大渡河轻机枪.jpg](https://commons.wikimedia.org/wiki/File:%E5%BC%BA%E6%B8%A1%E5%A4%A7%E6%B8%A1%E6%B2%B3%E8%BD%BB%E6%9C%BA%E6%9E%AA.jpg) |
 | `images/weapons/m24-stick-grenade.jpg` | 德国 M24 木柄手榴弹，型制参考 | Quickload | 公有领域（作者释放） | [M24 1.JPG](https://commons.wikimedia.org/wiki/File:M24_1.JPG) |
+| `images/weapons/dadao-3d.jpg` | 双手大刀外形三维示意 | WeEnterWinter | [CC BY 2.5](https://creativecommons.org/licenses/by/2.5/deed.zh)（亦 GFDL） | [Dadao 3D.jpg](https://commons.wikimedia.org/wiki/File:Dadao_3D.jpg) |
 
 没有配图的：麻尾 / 马尾手榴弹、大刀、梭镖（马刀）。没有找到清晰、且许可可以核验的自由使用实物照片。
 
