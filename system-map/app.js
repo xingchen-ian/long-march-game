@@ -46,9 +46,9 @@
       file: 'combat-core.js',
       status: 'done',
       layer: 'core',
-      what: '命中判定后再扣血；掩体只降命中；弹药、压制、步枪/轻机枪差异。',
-      deps: '依赖 unit-core、视线、工事挡视；毅力结算同层 resolveShot。',
-      note: '2026-11-23：hitChance → 命中才扣血；未中扣弹不扣血；数字占位未定稿。',
+      what: '命中判定后再扣血；掩体只降命中；趴下降低命中倍率；弹药、压制、步枪/轻机枪差异。',
+      deps: '依赖 unit-core、视线、工事挡视；毅力结算同层 resolveShot；姿态来自 behavior-core。',
+      note: '2026-11-23：hitChance → 命中才扣血；2026-11-26：趴下命中倍率；数字占位未定稿。',
     },
     los: {
       name: '视野 / 视线',
@@ -103,6 +103,15 @@
       what: '毅力（复用 morale）：正面少掉、侧翼/减员多掉；低毅力犹豫，再低动摇停火或后撤。',
       deps: '已接 unit-core 字段与 combat-core 结算；仍缺羁绊豁免、性格、R3 经历复用。对照总纲 §6.8、士兵规则 R1–R2。',
       note: '2026-11-23 突击关第一刀已部分落地；数字占位未定稿。不要另开一套精神条。',
+    },
+    'unit-behavior': {
+      name: '单位行为',
+      file: 'behavior-core.js',
+      status: 'partial',
+      layer: 'pending',
+      what: '躲避进掩体与匍匐姿态；决策核心选掩体/姿态。',
+      deps: '读 unit-core；姿态影响 combat 命中；对照 brief 2026-11-26-cover-prone。',
+      note: '2026-11-26：决策核心已接；姿态临时压模型；躲避+匍匐已进原型。数字占位未定稿。',
     },
     tactics: {
       name: '战术能力与代价',
