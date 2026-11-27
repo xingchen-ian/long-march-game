@@ -95,7 +95,7 @@
         <g class="sm-mod done" data-id="combat-core" transform="translate(250,278)">
           <rect width="170" height="58" rx="4" />
           <text x="12" y="22">射击与伤害</text>
-          <text class="sm-file-label" x="12" y="38">命中→扣血 · LMG</text>
+          <text class="sm-file-label" x="12" y="38">命中 · 趴下 · LMG</text>
           <text class="sm-status-label" x="118" y="22">已做</text>
         </g>
 
@@ -117,7 +117,7 @@
           level-core.js：校验 / 序列化 / 地形取样 / 工事种类默认 — 编辑器写，试玩读
         </text>
         <text class="sm-layer-sub" x="56" y="392">
-          交火核心：命中先于扣血 · 掩体只降命中 · 毅力规则在 combat · 默认关 e01/e06 轻机枪
+          交火核心：命中先于扣血 · 掩体只降命中 · 趴下命中倍率 · 毅力在 combat · e01/e06 轻机枪
         </text>
         <text class="sm-open-note" x="56" y="420">
           以后若开源：通用核心 + 待接入规则 ∥ 长征内容（两层边界画清即可，现在不拆仓库）
@@ -138,56 +138,65 @@
         <rect class="sm-layer-box pending" x="20" y="468" width="940" height="188" rx="6" />
         <text class="sm-layer-title" x="40" y="496">2. 待接入（会互相牵扯；部分已进突击关）</text>
         <text class="sm-layer-sub" x="40" y="516">
-          毅力/侧翼已部分接入；战术键与资源分配等仍未接通 — 不要画成长征内容
+          毅力/侧翼与单位行为（躲避+匍匐）已部分接入；战术键与资源分配等仍未接通 — 不要画成长征内容
         </text>
 
-        <g class="sm-mod partial" data-id="morale" transform="translate(56,540)">
-          <rect width="168" height="58" rx="4" />
-          <text x="12" y="22">士气与侧翼</text>
-          <text class="sm-file-label" x="12" y="38">R1/R2 已接突击</text>
-          <text class="sm-status-label" x="118" y="22">部分</text>
+        <g class="sm-mod partial" data-id="morale" transform="translate(40,540)">
+          <rect width="140" height="58" rx="4" />
+          <text x="10" y="22">士气与侧翼</text>
+          <text class="sm-file-label" x="10" y="38">R1/R2 已接</text>
+          <text class="sm-status-label" x="96" y="22">部分</text>
         </g>
 
-        <g class="sm-mod todo" data-id="tactics" transform="translate(244,540)">
-          <rect width="168" height="58" rx="4" />
-          <text x="12" y="22">战术能力与代价</text>
-          <text class="sm-file-label" x="12" y="38">tactics-buttons-v0</text>
-          <text class="sm-status-label" x="118" y="22">未做</text>
+        <g class="sm-mod partial" data-id="unit-behavior" transform="translate(190,540)">
+          <rect width="140" height="58" rx="4" />
+          <text x="10" y="22">单位行为</text>
+          <text class="sm-file-label" x="10" y="38">躲避+匍匐</text>
+          <text class="sm-status-label" x="96" y="22">部分</text>
         </g>
 
-        <g class="sm-mod todo" data-id="resource-alloc" transform="translate(432,540)">
-          <rect width="168" height="58" rx="4" />
-          <text x="12" y="22">行动前资源分配</text>
-          <text class="sm-file-label" x="12" y="38">resource-alloc-v0</text>
-          <text class="sm-status-label" x="118" y="22">未做</text>
+        <g class="sm-mod todo" data-id="tactics" transform="translate(340,540)">
+          <rect width="140" height="58" rx="4" />
+          <text x="10" y="22">战术能力与代价</text>
+          <text class="sm-file-label" x="10" y="38">tactics-v0</text>
+          <text class="sm-status-label" x="96" y="22">未做</text>
         </g>
 
-        <g class="sm-mod todo" data-id="other-goals" transform="translate(620,540)">
-          <rect width="168" height="58" rx="4" />
-          <text x="12" y="22">其余目标完整关</text>
-          <text class="sm-file-label" x="12" y="38">选单占位</text>
-          <text class="sm-status-label" x="118" y="22">未做</text>
+        <g class="sm-mod todo" data-id="resource-alloc" transform="translate(490,540)">
+          <rect width="140" height="58" rx="4" />
+          <text x="10" y="22">行动前资源分配</text>
+          <text class="sm-file-label" x="10" y="38">resource-alloc</text>
+          <text class="sm-status-label" x="96" y="22">未做</text>
         </g>
 
-        <g class="sm-mod todo" data-id="river-assets" transform="translate(808,540)">
-          <rect width="130" height="58" rx="4" />
-          <text x="12" y="22">河/船/桥</text>
-          <text class="sm-file-label" x="12" y="38">缺资产</text>
-          <text class="sm-status-label" x="80" y="22">未做</text>
+        <g class="sm-mod todo" data-id="other-goals" transform="translate(640,540)">
+          <rect width="140" height="58" rx="4" />
+          <text x="10" y="22">其余目标完整关</text>
+          <text class="sm-file-label" x="10" y="38">选单占位</text>
+          <text class="sm-status-label" x="96" y="22">未做</text>
+        </g>
+
+        <g class="sm-mod todo" data-id="river-assets" transform="translate(790,540)">
+          <rect width="148" height="58" rx="4" />
+          <text x="10" y="22">河/船/桥</text>
+          <text class="sm-file-label" x="10" y="38">缺资产</text>
+          <text class="sm-status-label" x="98" y="22">未做</text>
         </g>
 
         <text class="sm-layer-sub" x="56" y="632">
-          虚线箭头 = 规划依赖，尚未接通
+          虚线箭头 = 规划依赖或仅部分接通
         </text>
 
-        <!-- Dashed edges from pending up to core（毅力已部分接通，线型仍虚线=未完） -->
-        <path class="sm-edge dashed" d="M 140 540 L 140 336" />
-        <text class="sm-edge-label" x="148" y="460">已接毅力（部分）</text>
-        <path class="sm-edge dashed" d="M 328 540 L 335 336" />
-        <text class="sm-edge-label" x="336" y="460">战术键未接</text>
-        <path class="sm-edge dashed" d="M 516 540 L 740 336" />
-        <text class="sm-edge-label" x="620" y="448">接试玩壳</text>
-        <path class="sm-edge dashed" d="M 704 540 L 790 236" />
+        <!-- Dashed edges from pending up to core（毅力/行为已部分接通，线型仍虚线=未完） -->
+        <path class="sm-edge dashed" d="M 110 540 L 140 336" />
+        <text class="sm-edge-label" x="40" y="448">已接毅力（部分）</text>
+        <path class="sm-edge dashed" d="M 260 540 L 335 336" />
+        <text class="sm-edge-label" x="268" y="460">已接行为（部分）</text>
+        <path class="sm-edge dashed" d="M 410 540 L 420 336" />
+        <text class="sm-edge-label" x="418" y="448">战术键未接</text>
+        <path class="sm-edge dashed" d="M 560 540 L 740 336" />
+        <text class="sm-edge-label" x="640" y="448">接试玩壳</text>
+        <path class="sm-edge dashed" d="M 710 540 L 790 236" />
         <text class="sm-edge-label" x="760" y="420">扩 goal-core</text>
 
         <!-- Layer 3: Content -->
@@ -304,6 +313,17 @@
             </td>
           </tr>
           <tr>
+            <td>躲避 / 匍匐（单位行为）</td>
+            <td>
+              已部分落地：<code>behavior-core.js</code> 决策核心；姿态临时压模型；
+              <code>combat-core</code> 读趴下命中倍率。补完整姿态模型仍走这两处；对照
+              brief 2026-11-26-cover-prone
+            </td>
+            <td class="sm-should-not">
+              不要把行为逻辑写进关卡 JSON；不要另开一套姿态条；不要把长征文案写进核心
+            </td>
+          </tr>
+          <tr>
             <td>一场长征关</td>
             <td>
               关卡 JSON + 内容层（文案、角色、史料出处）；复用已有目标类型和编辑器
@@ -320,8 +340,8 @@
 
   <footer class="sm-footer">
     <p>
-      快照日期：2026-11-23（上海时区）。已对照本机
-      <code>web-proto</code> 突击关第一刀（命中 / 毅力 / 敌军轻机枪）。本页合入资料站，补充「系统设计」的位置与关系。
+      快照日期：2026-11-26（上海时区）。已对照本机
+      <code>web-proto</code>（命中 / 毅力 / LMG）与 brief 2026-11-26-cover-prone（单位行为：躲避+匍匐）。本页合入资料站，补充「系统设计」的位置与关系。
     </p>
   </footer>
 </div>
